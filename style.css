@@ -80,6 +80,30 @@ img {
     height: 500px;
 }
 
+.hero2 .container {
+    background: url('../images/recentevents.jpg') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 500px;
+}
+
+.column {
+    float: left;
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
 .hero .hero-content {
     width: 70%;
 }
@@ -183,6 +207,7 @@ img {
 
 .bg-yellow {
     background: var(--yellow);
+    /*background-image: linear-gradient(red, yellow);*/
 }
 
 .bg-gray {
